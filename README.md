@@ -1,4 +1,51 @@
-# NXROBO Spark sagittarius_arm_ros
+# VR-Enabled Teleoperation for the NXROBO Sagittarius Arm 
+
+This repository contains the full ROS workspace for the NXROBO Sagittarius 6-DOF robotic arm.  
+While this workspace includes the full base framework from [NXROBO](https://github.com/NXROBO/sagittarius_ws/tree/main) and related tools, **our contributions focus specifically on the `unity_vr_control` package**, which implements a **VR-enabled teleoperation and task development system**.
+
+This project was developed during the **NSF Research Experience for Undergraduates (REU)** at **Kent State University’s XR Lab**, under Dr. Kwasa (College of Aeronautics and Engineering).
+
+---
+
+## Our Contributions
+
+Our work enables:
+- **Real-time, VR-enabled teleoperation** of the Sagittarius arm using a Unity simulation, HTC Vive headset, and controllers.
+- **Digital twin simulation** of the arm in Unity for safe testing and task development.
+- **Lightweight inverse kinematics (IK) pipeline** for low-latency control (bypassing heavy MoveIt planning).
+- **Data logging and autonomous replay** of recorded trajectories for repeated tasks.
+
+> **Note:**  
+> Half of the teleoperation framework resides in the **Unity scene and scripts**, which are maintained separately within the XR Lab.  
+> Access to the Unity environment can be coordinated through **Dr. Kwasa** at Kent State’s College of Aeronautics and Engineering.
+
+---
+
+## Credits
+
+This project builds on the following repositories:
+1. [NXROBO Sagittarius Workspace](https://github.com/NXROBO/sagittarius_ws/tree/main) – Provides the base ROS packages, robot descriptions, MoveIt configuration, and SDK.
+   - Their README.md follows below and is in Chinese. You will need to use this if you are setting up from scratch.
+3. [sagittarius_planner](https://github.com/medhijk/sagittarius_planner) by [medhijk](https://github.com/medhijk) – Used for initial setup and reference during system integration.
+
+All teleoperation-specific work (VR integration, Unity bridge, lightweight IK solver, and task replay system) is original to this project and located in the `unity_vr_control` package.
+
+---
+
+## Quick Start (for Future Students)
+
+1. **Clone this repository** and build it as a standard ROS Noetic workspace:
+   ```bash
+   cd ~
+   git clone https://github.com/samuelstasiewicz/VR-Enabled-Teleoperation.git
+   cd VR-Enabled-Teleoperation
+   catkin_make
+   source devel/setup.bash
+
+
+
+
+# NXROBO Spark sagittarius_arm_ros (NXROBO README)
 
 
 ## 说明 Description
