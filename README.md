@@ -16,7 +16,8 @@ Our work enables:
 - **Data logging and autonomous replay** of recorded trajectories for repeated tasks.
 
 > **Note:**  
-> Half of the teleoperation framework resides in the **Unity scene and scripts**, which are maintained separately within the XR Lab.  
+> Half of the teleoperation framework resides in the **Unity scene and scripts**, which are maintained separately within the XR Lab.
+> I have included the two important Unity C Sharp scripts in main. 
 > Access to the Unity environment can be coordinated through **Dr. Kwasa** at Kent State’s College of Aeronautics and Engineering.
 
 ---
